@@ -81,6 +81,73 @@ li img{
   text-align: center;
 }
 
+/*experience*/
+
+.main-experience{
+  list-style: none;
+  position: relative;
+  border: 15px;
+  border-style:groove;
+  padding: 50px;
+  background-color: white;
+}
+
+.main-experience::before {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: 3px;
+  background-color: grey;
+  left: 50%;
+  margin-left: -1.5px;
+}
+
+.timeline-li{
+  margin-bottom: 20px;
+  position: relative;
+  display: table;
+}
+
+.timeline-body {
+  width: 45%;
+  float: left;
+  border: 1px solid #d4d4d4;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+}
+
+.timeline-badge{
+  width: 40px;
+  height: 40px;
+  line-height: 50px;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  margin-left: -20px;
+  z-index: 100;
+  border-radius: 50%;
+  border: 3px solid grey;
+}
+
+.timeline-badge-study{
+  background-color: green;
+}
+
+.timeline-badge-intern{
+  background-color: yellow;
+}
+
+.timeline-badge-research{
+  background-color: blue;
+}
+
+.timeline-even>.timeline-body{
+  float:right;
+}
 
 /*About me*/
 
