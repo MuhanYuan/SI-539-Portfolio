@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Home Page</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<link rel="stylesheet" href="css/jquery.hiSlider.min.css">
+<link rel="stylesheet" type="text/css" href="css/css.css"/>
+
+<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	body{
+    background-image: url("images/bg1.jpg");
+    background-size: 100%;
+  }
+	li{
+		list-style: none;
+	}
+	li img{
+		display: block;
+		margin: 0 auto;
+		max-height: 500px;
+	}
+	
+	#wrap{
+		width: 100%;
+		min-width: 300px;
+		margin: 100px auto 0px;
+		background: #fefefe;
+	}
+	.hiSlider{
+		overflow: hidden;
+		height: 500px;
+		width: 500px;
+		background: lightblue;
+	}
+	.hiSlider-item{
+		float: left;
+	}
+
+</style>
+
+</head>
+<body>
+	<header>
+		<div class="container">
+      <div class="row">
+        <div class="col-lg-2 home-image">
+          <img class="img-responsive img-circle"  src="images/image1.jpeg" alt="lol">
+        </div>
+      </div>
+    </div>
+		<div class="container">
+			<nav class="row">
+				<a class="col-lg-2" href="./index.html">Home</a>
+				<a class="col-lg-2" href="./photo.html">Photo</a>
+				<a class="col-lg-2" href="./experience.html">Experience</a>
+				<a class="col-lg-2" href="./skills.html">Skills</a>
+				<a class="col-lg-2" href="./about.html">About</a>
+			</nav>
+		</div>
+	</header>
+	<div id="wrap">
+
+		<ul class="hiSlider hiSlider3">
+			<li class="hiSlider-item"><img src="images/photo1.jpeg" alt="11111"></li>
+			<li class="hiSlider-item"><img src="images/photo2.jpeg" alt="22222"></li>
+			<li class="hiSlider-item"><img src="images/photo3.jpeg" alt="33333"></li>
+			<li class="hiSlider-item"><img src="images/photo4.jpeg" alt="44444"></li>
+			<li class="hiSlider-item"><img src="images/photo5.jpeg" alt="55555"></li>
+		</ul>
+
+	</div>
+	<h1>lalalall</h1>
+<img src="images/photo1.jpeg" alt="11111">
+<script src="js/jquery.1.9.1.js"></script>
+<script src="js/jquery.hiSlider.min.js"></script>
+<script>
+	$('.hiSlider3').hiSlider({
+		isFlexible: true,
+		isSupportTouch: true,
+		titleAttr: function(curIdx){
+			return $('img', this).attr('alt');
+		}
+	});
+</script>
+
+</body>
+</html>

@@ -28,12 +28,17 @@ li img{
   background: #fefefe;
 }
 .super-heading{
-  font-size: 800%;
+  font-size: 1200%;
   font-family: serif;
   text-align: center;
   /*color: #00cccc;*/
   color:white;
   margin-top: 100px;
+  margin-bottom: 50px;
+}
+.index-heading{
+  font-size: 800%;
+  margin-bottom: 0px;
 }
 
 .home-image{
@@ -78,6 +83,74 @@ li img{
 .welcome{
   color: blue;
   font-size: 500%;
+  text-align: center;
+}
+
+/*footer*/
+#footer {
+	background-color: #eee;
+	border-top: 1px solid #d8d8d8;
+	padding: 30px 0;
+}
+#footer p {
+	font-size: 12px;
+	line-height: 30px;
+	padding-left: 10px;
+}
+#connect {
+	float: right;
+	display: inline-block;
+	margin-right: 30px;
+}
+#connect a {
+	background: url(../images/icons.png) no-repeat;
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+	margin: 0 10px;
+}
+#connect a.googleplus {
+	background-position: 0 -40px;
+}
+#connect a.twitter {
+	background-position: 0 -80px;
+}
+#connect a.tumbler {
+	background-position: 0 -120px;
+}
+#connect a.facebook:hover {
+	background-position: -40px 0;
+}
+#connect a.googleplus:hover {
+	background-position: -40px -40px;
+}
+#connect a.twitter:hover {
+	background-position: -40px -80px;
+}
+#connect a.tumbler:hover {
+	background-position: -40px -120px;
+}
+
+
+
+/*pokemon*/
+.photo-main{
+  list-style: none;
+  position: relative;
+  border: 15px;
+  border-style:groove;
+  padding: 50px;
+  background-color: white;
+}
+
+.photo-unit{
+  padding:20px;
+  border: 3px;
+  border-style: dotted;
+  border-color: grey;
+}
+
+.pok-title{
   text-align: center;
 }
 
@@ -232,17 +305,3 @@ progress:hover::-webkit-progress-value{
 .pro_skill::-webkit-progress-value { background-color: orange; }
 .lan_skill::-webkit-progress-value { background-color: lightblue; }
 .oth_skill::-webkit-progress-value { background-color: #339900; }
-
-footer{
-  background-color: white;
-  margin: 0;
-
-}
-
-.copy-right{
-
-}
-
-.footer{
-  height: 250px;
-}
