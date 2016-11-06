@@ -18,23 +18,25 @@
     border: 3px solid;
     left:50%;
     z-index: 100;
-    width: 40%;
-    height: 80%;
-    margin-left: -20%;
+    width: 400px;
+    height: 600px;
+    margin-left: -200px;
     background-size: 100%;
     display: none;
-
   }
   </style>
 
   <script>
     function mover(img){
-      document.getElementById("hidden-frame").style.display="block";
-      document.getElementById("hidden-frame").style.backgroundImage = "URL('"+img.src+"')";
+        document.getElementById("hidden-frame").style.display="block";
+        document.getElementById("hidden-frame").style.backgroundImage = "URL('"+img.src+"')";
+
     }
     function mout(){
       document.getElementById("hidden-frame").style.display="none";
     }
+
+
   </script>
 
 </head>
@@ -102,6 +104,31 @@
   <div class="top">
     <a href="#top">back to top</a>
   </div>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 social">
+          <div class="face col-lg-3 col-md-3 col-xs-6">
+            <a href="https://www.facebook.com/profile.php?id=100011871866185"><img class="img-responsive" src="images/face.png"></a>
+          </div>
+          <div href="" class="twitter col-lg-3 col-md-3 col-xs-6">
+            <a href=""><img class="img-responsive" src="images/twitter.png"></a>
+          </div>
+          <div href="" class="instagram col-lg-3 col-md-3 col-xs-6">
+            <a href="https://www.instagram.com/sasasamoyed/?hl=en"><img class="img-responsive" src="images/inst.png"></a>
+          </div>
+          <div href="" class="email col-lg-3 col-md-3 col-xs-6">
+            <a href="mailto:yuanmh@umich.edu"><img class="img-responsive" src="images/email.png"></a>
+          </div>
+        </div>
+        <div class="col-lg-6 copyright">
+          <p >
+            © 2016 UMSI MUHAN YUAN. All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>

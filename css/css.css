@@ -62,6 +62,16 @@
 .nav-li:hover{
   border-top: 3px solid;
   border-color: white;
+  opacity: 0.2;
+}
+@media screen and (max-width: 768px){
+  .nav-li:hover{
+    border: none;
+  }
+  .cur-page{
+    border: none;
+    border: 3px solid;
+  }
 }
 
 
@@ -145,52 +155,42 @@ li img{
 }
 
 /*footer*/
-#footer {
-	background-color: #eee;
-	border-top: 1px solid #d8d8d8;
-	padding: 30px 0;
+footer{
+  background-color: white;
 }
-#footer p {
-	font-size: 12px;
-	line-height: 30px;
-	padding-left: 10px;
+.social{
+  float: right;
 }
-#connect {
-	float: right;
-	display: inline-block;
-	margin-right: 30px;
+.face{
+  padding: 30px;
 }
-#connect a {
-	background: url(../images/icons.png) no-repeat;
-	display: inline-block;
-	height: 30px;
-	width: 30px;
-	margin: 0 10px;
+.instagram{
+padding: 30px;
 }
-#connect a.googleplus {
-	background-position: 0 -40px;
+.twitter{
+padding: 30px;
 }
-#connect a.twitter {
-	background-position: 0 -80px;
+.email{
+padding: 30px;
 }
-#connect a.tumbler {
-	background-position: 0 -120px;
-}
-#connect a.facebook:hover {
-	background-position: -40px 0;
-}
-#connect a.googleplus:hover {
-	background-position: -40px -40px;
-}
-#connect a.twitter:hover {
-	background-position: -40px -80px;
-}
-#connect a.tumbler:hover {
-	background-position: -40px -120px;
+.copyright{
+  font-size: 150%;
+  margin-top: 80px;
+  text-align: center;
 }
 
-
-
+@media screen and (max-width: 1000px){
+  .slider{
+    font-size: 200%;
+  }
+  .welcome{
+    font-size: 300%;
+  }
+  input{
+    height: 50px;
+    font-size: 200%;
+  }
+}
 /*pokemon*/
 
 .photo-main{
@@ -198,7 +198,7 @@ li img{
   position: relative;
   border: 15px;
   border-style:groove;
-  padding: 50px;
+  padding: 5%;
   background-color: white;
 }
 
@@ -213,11 +213,13 @@ li img{
 /*experience*/
 
 .main-experience{
+
   list-style: none;
   position: relative;
   border: 15px;
   border-style:groove;
   padding: 50px;
+  padding-top: 100px;
   background-color: white;
 }
 
@@ -231,7 +233,6 @@ li img{
   left: 50%;
   margin-left: -1.5px;
 }
-
 .timeline-li{
   margin-bottom: 20px;
   position: relative;
@@ -263,25 +264,51 @@ li img{
 }
 
 .timeline-badge-study{
-  background-color: green;
+  background-color: #7CFC00;
 }
 
 .timeline-badge-intern{
-  background-color: yellow;
+  background-color: #EEEE00;
 }
 
 .timeline-badge-research{
-  background-color: blue;
+  background-color: #7B68EE;
 }
 
 .timeline-even>.timeline-body{
   float:right;
 }
+@media screen and (max-width: 1000px){
+  .timeline-even>.timeline-body{
+    float:left;
+  }
+  .timeline-body {
+    width: 80%;
+  }
+  .main-experience::before {
+    left:90%;
+  }
+  .timeline-badge{
+    left:90%;
+    width: 30px;
+    height: 30px;
+    margin-left: 23px;
+  }
+}
+@media screen and (max-width: 600px){
+  .timeline-body {
+    width: 100%;
+  }
+  .main-experience::before {
+    display: none;
+  }
+  .timeline-badge{
+    display: none;
+  }
+}
+
 
 /*About me*/
-
-
-
 #about{
   text-align: center;
   font-family: Georgia,fantasy,sans-serif,cursive;
@@ -331,7 +358,6 @@ li img{
 
 progress {
   height: 30px;
-  width: 200px;
   border-radius: 5px;
   border-left: 1px #ccc solid;
   border-right: 1px #ccc solid;

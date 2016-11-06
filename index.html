@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <meta name="viewport" content="width=device-width" initial-scale="1">
   <title>MY Home Page</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
@@ -15,6 +15,18 @@
     background-attachment: fixed;
     margin: 0;
   }
+  /*.face{
+    background-image:url(./images/face.png);
+  }
+  .twitter{
+    background-image:url(./images/twitter.png);
+  }
+  .instagram{
+    background-image:url(./images/inst.png);
+  }
+  .email{
+    background-image:url(./images/email.png);
+  }*/
   </style>
 </head>
 
@@ -23,7 +35,7 @@
     <h1 class="super-heading index-heading">Muhan Yuan</h1>
     <div class="container">
       <div class="row">
-        <div class="col-lg-4 col-md-6 col-sm-6 home-image">
+        <div class="col-lg-4 col-xs-6 home-image">
           <img class="img-responsive img-circle"  src="images/image1.jpeg" alt="my photot">
         </div>
       </div>
@@ -73,14 +85,27 @@
       <a href="#top">back to top</a>
     </div>
     <footer>
-      <div id="footer">
-        <div class="clearfix">
-          <div id="connect">
-            <a href="http://freewebsitetemplates.com/go/facebook/" target="_blank" class="facebook"></a><a href="http://freewebsitetemplates.com/go/googleplus/" target="_blank" class="googleplus"></a><a href="http://freewebsitetemplates.com/go/twitter/" target="_blank" class="twitter"></a><a href="http://www.freewebsitetemplates.com/misc/contact/" target="_blank" class="tumbler"></a>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 social">
+            <div class="face col-lg-3 col-md-3 col-xs-6">
+              <a href="https://www.facebook.com/profile.php?id=100011871866185"><img class="img-responsive" src="images/face.png"></a>
+            </div>
+            <div href="" class="twitter col-lg-3 col-md-3 col-xs-6">
+              <a href=""><img class="img-responsive" src="images/twitter.png"></a>
+            </div>
+            <div href="" class="instagram col-lg-3 col-md-3 col-xs-6">
+              <a href="https://www.instagram.com/sasasamoyed/?hl=en"><img class="img-responsive" src="images/inst.png"></a>
+            </div>
+            <div href="" class="email col-lg-3 col-md-3 col-xs-6">
+              <a href="mailto:yuanmh@umich.edu"><img class="img-responsive" src="images/email.png"></a>
+            </div>
           </div>
-          <p>
-            © 2023 Zerotype. All Rights Reserved.
-          </p>
+          <div class="col-lg-6 copyright">
+            <p >
+              © 2016 UMSI MUHAN YUAN. All Rights Reserved.
+            </p>
+          </div>
         </div>
       </div>
     </footer>
