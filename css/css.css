@@ -95,6 +95,7 @@
   text-align: center;
 }
 
+
 /*index*/
 .index-content{
   margin-top: 200px;
@@ -102,6 +103,7 @@
 .form-name{
   display: block;
   margin: 0 auto;
+  padding: 50px;
 }
 input{
   display: block;
@@ -109,45 +111,22 @@ input{
   font-size: 300%;
   margin: 0 auto;
 }
+.button{
+  margin: 30px;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  width: 140px;
+  margin-left: -70px;
+  margin-bottom: 100px;
+  text-align: center;
+  border-radius: 10%;
+}
 
 /*photo frame*/
 .slider-div{
   background-color:rgba(255,255,255,0.15);
   padding: 100px;
-}
-
-.slider{
-  color: white;
-  font-size: 300%;
-  text-align: center;
-  font-family: fantasy;
-}
-li{
-  list-style: none;
-}
-li img{
-  display: block;
-  margin: 0 auto;
-  max-height: 500px;
-}
-
-#wrap{
-  width: 30%;
-  min-width: 300px;
-  margin: 100px auto 0px;
-  background: none;
-}
-.hiSlider{
-  overflow: hidden;
-  height: 500px;
-  width: 500px;
-  background: none;
-}
-
-#sl-link{
-  font-size: 50%;
-  color: white;
-  font-family: serif;
 }
 
 /*footer*/

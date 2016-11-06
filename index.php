@@ -1,3 +1,23 @@
+<?php
+  session_start();
+  if (isset($_POST["signin"])){
+    if (isset($_SESSION["count"]) ){
+      $_SESSION["count"] +=1;
+    }
+    else{
+      $_SESSION["count"] =1;
+    }
+    if($_SESSION["count"]>2){
+      $_SESSION["message"] = "Hi, ". $_POST["who"]." It is the third time you coming to my page. I think you must like it. Why don't you email me your real name? :)";
+      unset($_SESSION["count"]);
+      header('Location:message.php');
+      return;
+    }
+
+  }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,18 +35,6 @@
     background-attachment: fixed;
     margin: 0;
   }
-  /*.face{
-    background-image:url(./images/face.png);
-  }
-  .twitter{
-    background-image:url(./images/twitter.png);
-  }
-  .instagram{
-    background-image:url(./images/inst.png);
-  }
-  .email{
-    background-image:url(./images/email.png);
-  }*/
   </style>
 </head>
 
@@ -62,23 +70,12 @@
           </p>
           <p class="welcome" id="wel-q">What is your name:</p>
           <form class="form-name" method="post">
-            <input type="text" size="20" id="name" onchange="welcome()">
+            <input type="text" size="20" id="name" name="who" onsubmit="welcome()">
+            <input type="submit" value="Sign in" name="signin" class="button">
           </form>
         </div>
-
-        <div class="slider-div">
-          <h1 class="slider">Let me show you my Pokemon collection!<a id="sl-link" href="./photo.html"></br>(Go to my POKEDEX)</a></h1>
-          <div id="wrap">
-        		<ul class="hiSlider SliderPok">
-        			<li class="hiSlider-item"><img src="images/pok1.png" alt="Flareon"></li>
-        			<li class="hiSlider-item"><img src="images/pok2.png" alt="Snorlax"></li>
-        			<li class="hiSlider-item"><img src="images/pok3.png" alt="Omanyte"></li>
-        			<li class="hiSlider-item"><img src="images/pok4.png" alt="Raichu"></li>
-        			<li class="hiSlider-item"><img src="images/pok5.png" alt="Slowbro"></li>
-        		</ul>
-        	</div>
-        </div>
     </div>
+
 
     <div class="top">
       <a href="#top">back to top</a>
