@@ -13,68 +13,95 @@
     background-attachment: fixed;
     margin: 0;
   }
+  #hidden-frame{
+    position: fixed;
+    border: 3px solid;
+    left:50%;
+    z-index: 100;
+    width: 40%;
+    height: 80%;
+    margin-left: -20%;
+    background-size: 100%;
+    display: none;
+
+  }
   </style>
+
+  <script>
+    function mover(img){
+      document.getElementById("hidden-frame").style.display="block";
+      document.getElementById("hidden-frame").style.backgroundImage = "URL('"+img.src+"')";
+    }
+    function mout(){
+      document.getElementById("hidden-frame").style.display="none";
+    }
+  </script>
+
 </head>
 
 <body>
+  <div id="hidden-frame"></div>
   <header>
     <h1 class="super-heading">MY</h1>
 
     <div class="container">
-      <nav class="row nav">
-
-        <a class="col-lg-2 nav-li" href="./index.html">Home</a>
-        <a class="col-lg-2 nav-li" href="./photo.html">Photo</a>
-        <a class="col-lg-2 nav-li" href="./experience.html">Experience</a>
-        <a class="col-lg-2 nav-li" href="./skill.html">Skills</a>
-        <a class="col-lg-2 nav-li" href="./about.html">About</a>
-      </nav>
+      <div class="row">
+        <ul class="nav nav-justified nav-ul">
+          <li><a class="nav-li" href="./index.html">Home</a></li>
+          <li><a class="nav-li cur-page" href="./photo.html">Photo</a></li>
+          <li><a class="nav-li" href="./experience.html">Experience</a></li>
+          <li><a class="nav-li" href="./skill.html">Skills</a></li>
+          <li><a class="nav-li" href="./about.html">About</a></li>
+        </ul>
+      </div>
     </div>
   </header>
 
   <div class="container main">
     <div class="row photo-main">
       <h1 class="pok-title">MY Pokemon Collection</h1>
-      <div class="col-lg-3 col-md-4 col-sm-6 photo-unit">
-        <img class="img-responsive" src="images/pok1.png" alt="">
+      <div class="col-lg-2 col-md-3 col-sm-4 photo-unit">
+        <img class="img-responsive" src="images/pok1.png" alt="" onmouseover="mover(this);" onmouseout="mout();">
       </div>
-      <div class="col-lg-3 col-md-4 col-sm-6 photo-unit">
-        <img class="img-responsive" src="images/pok2.png" alt="">
+      <div class="col-lg-2 col-md-3 col-sm-4 photo-unit">
+        <img class="img-responsive" src="images/pok2.png" alt="" onmouseover="mover(this);" onmouseout="mout();">
       </div>
-      <div class="col-lg-3 col-md-4 col-sm-6 photo-unit">
-        <img class="img-responsive" src="images/pok3.png" alt="">
+      <div class="col-lg-2 col-md-3 col-sm-4 photo-unit">
+        <img class="img-responsive" src="images/pok3.png" alt="" onmouseover="mover(this);" onmouseout="mout();">
       </div>
-      <div class="col-lg-3 col-md-4 col-sm-6 photo-unit">
-        <img class="img-responsive" src="images/pok4.png" alt="">
+      <div class="col-lg-2 col-md-3 col-sm-4 photo-unit">
+        <img class="img-responsive" src="images/pok4.png" alt="" onmouseover="mover(this);" onmouseout="mout();">
       </div>
-      <div class="col-lg-3 col-md-4 col-sm-6 photo-unit">
-        <img class="img-responsive" src="images/pok5.png" alt="">
+      <div class="col-lg-2 col-md-3 col-sm-4 photo-unit">
+        <img class="img-responsive" src="images/pok5.png" alt="" onmouseover="mover(this);" onmouseout="mout();">
       </div>
-      <div class="col-lg-3 col-md-4 col-sm-6 photo-unit">
-        <img class="img-responsive" src="images/pok6.png" alt="">
+      <div class="col-lg-2 col-md-3 col-sm-4 photo-unit">
+        <img class="img-responsive" src="images/pok6.png" alt="" onmouseover="mover(this);" onmouseout="mout();">
       </div>
-      <div class="col-lg-3 col-md-4 col-sm-6 photo-unit">
-        <img class="img-responsive" src="images/pok7.png" alt="">
+      <div class="col-lg-2 col-md-3 col-sm-4 photo-unit">
+        <img class="img-responsive" src="images/pok7.png" alt="" onmouseover="mover(this);" onmouseout="mout();">
       </div>
-      <div class="col-lg-3 col-md-4 col-sm-6 photo-unit">
-        <img class="img-responsive" src="images/pok8.png" alt="">
+      <div class="col-lg-2 col-md-3 col-sm-4 photo-unit">
+        <img class="img-responsive" src="images/pok8.png" alt="" onmouseover="mover(this);" onmouseout="mout();">
       </div>
-      <div class="col-lg-3 col-md-4 col-sm-6 photo-unit">
-        <img class="img-responsive" src="images/pok9.jpeg" alt="">
+      <div class="col-lg-2 col-md-3 col-sm-4 photo-unit">
+        <img class="img-responsive" src="images/pok9.jpeg" alt="" onmouseover="mover(this);" onmouseout="mout();">
       </div>
-      <div class="col-lg-3 col-md-4 col-sm-6 photo-unit">
-        <img class="img-responsive" src="images/pok10.jpeg" alt="">
+      <div class="col-lg-2 col-md-3 col-sm-4 photo-unit">
+        <img class="img-responsive" src="images/pok10.jpeg" alt="" onmouseover="mover(this);" onmouseout="mout();">
       </div>
-      <div class="col-lg-3 col-md-4 col-sm-6 photo-unit">
-        <img class="img-responsive" src="images/pok11.jpeg" alt="">
+      <div class="col-lg-2 col-md-3 col-sm-4 photo-unit">
+        <img class="img-responsive" src="images/pok11.jpeg" alt="" onmouseover="mover(this);" onmouseout="mout();">
       </div>
-      <div class="col-lg-3 col-md-4 col-sm-6 photo-unit">
-        <img class="img-responsive" src="images/pok12.jpeg" alt="">
+      <div class="col-lg-2 col-md-3 col-sm-4 photo-unit">
+        <img class="img-responsive" src="images/pok12.jpeg" alt=""onmouseover="mover(this);" onmouseout="mout();">
       </div>
 
     </div>
   </div>
+  <div class="top">
+    <a href="#top">back to top</a>
+  </div>
 </body>
-
 
 </html>

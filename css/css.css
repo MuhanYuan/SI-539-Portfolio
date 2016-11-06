@@ -3,30 +3,7 @@
   margin: 0;
   padding: 0;
 }
-.hiSlider{
-  overflow: hidden;
-  height: 400px;
-  width: 500px;
-  background: #eee;
-  padding: 0;
-}
-.hiSlider-item{
-  float: left;
-}
-li{
-  list-style: none;
-}
-li img{
-  display: block;
-  margin: 0 auto;
-  max-height: 500px;
-  background-repeat: no-repeat;
-}
-#wrap{
-  min-width: 300px;
-  /*margin: 10px auto 10px;*/
-  background: #fefefe;
-}
+
 .super-heading{
   font-size: 1200%;
   font-family: serif;
@@ -46,30 +23,49 @@ li img{
   float: none;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   margin-top: 50px;
 }
 
-.nav{
-  background-color: none;
+.top{
+  position: fixed;
+  right: 0;
+  bottom:100px;
+  height: 60px;
+  width: 35px;
+  font-weight: bolder;
+  background-color: white;
+  color: black;
+  border-radius: 10%;
+  text-align: center;
+  border: 1px solid;
 }
+
+/*nav*/
+.nav-ul{
+  border-top:1px solid;
+  border-color: white;
+}
+
 .nav-li{
-  margin: 0 18px;
   font-size: 200%;
-  /*color: orange;*/
-  color: darkblue;
+  color: white;
   text-align: center;
   font-family: fantasy;
-  border: 5px solid;
   border-color: white;
-  border-radius: 10px;
-  background-color: lightblue;
 }
+.cur-page{
+  border-top: 3px solid;
+  border-color: white;
+}
+
 .nav-li:hover{
-  position: relative;
-  bottom: 10px;
-  background-color: yellow;
+  border-top: 3px solid;
+  border-color: white;
 }
+
+
+/*body*/
 .main{
   margin-top: 50px;
   background-color: white;
@@ -80,10 +76,72 @@ li img{
   background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#0000ff)); */
   background: -webkit-linear-gradient(top, #fff, #696969);
 }
+.wel{
+  margin-bottom: 100px;
+}
 .welcome{
-  color: blue;
+  color: white;
   font-size: 500%;
   text-align: center;
+}
+
+/*index*/
+.index-content{
+  margin-top: 200px;
+}
+.form-name{
+  display: block;
+  margin: 0 auto;
+}
+input{
+  display: block;
+  height: 80px;
+  font-size: 300%;
+  margin: 0 auto;
+}
+
+/*photo frame*/
+.slider-div{
+  background-color:rgba(255,255,255,0.15);
+  padding: 100px;
+}
+
+.slider{
+  color: white;
+  font-size: 300%;
+  text-align: center;
+  font-family: fantasy;
+}
+
+li{
+  list-style: none;
+}
+li img{
+  display: block;
+  margin: 0 auto;
+  max-height: 500px;
+}
+
+#wrap{
+  width: 30%;
+  min-width: 300px;
+  margin: 100px auto 0px;
+  background: none;
+}
+.hiSlider{
+  overflow: hidden;
+  height: 500px;
+  width: 500px;
+  background: none;
+}
+.hiSlider-item{
+  float: left;
+}
+
+#sl-link{
+  font-size: 50%;
+  color: white;
+  font-family: serif;
 }
 
 /*footer*/
@@ -134,6 +192,7 @@ li img{
 
 
 /*pokemon*/
+
 .photo-main{
   list-style: none;
   position: relative;
@@ -145,9 +204,6 @@ li img{
 
 .photo-unit{
   padding:20px;
-  border: 3px;
-  border-style: dotted;
-  border-color: grey;
 }
 
 .pok-title{
