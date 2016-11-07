@@ -104,12 +104,16 @@
   margin: 0 auto;
   padding: 50px;
 }
+
 input{
+  left:50%;
   display: block;
   height: 80px;
   font-size: 300%;
   margin: 0 auto;
 }
+
+
 .button{
   margin: 30px;
   display: inline-block;
@@ -163,6 +167,15 @@ padding: 30px;
   input{
     height: 50px;
     font-size: 200%;
+  }
+}
+
+@media screen and (max-width: 500px){
+  input{
+    display: none;
+  }
+  #wel-q{
+    display: none;
   }
 }
 /*pokemon*/
@@ -269,15 +282,25 @@ padding: 30px;
     margin-left: 23px;
   }
 }
+
 @media screen and (max-width: 600px){
   .timeline-body {
     width: 100%;
+  }
+  .timeline-title{
+    font-size: 150%;
   }
   .main-experience::before {
     display: none;
   }
   .timeline-badge{
     display: none;
+  }
+  .timeline-li{
+    display: table;
+  }
+  .time-p{
+    width: 80%;
   }
 }
 
@@ -308,27 +331,50 @@ padding: 30px;
 }
 
 .about-content{
-  /*border: 2px solid;*/
   margin: 0 50px;
 }
 .about-p{
   font-size: 20px;
 }
-/*.about-img{
-  margin: 50px;
-}*/
+
 .about-sub-title{
   text-align: center;
 }
-@media screen and (max-width: 970px){
+@media screen and (max-width: 1024px){
   .about-intro{
     margin-bottom: 0;
   }
   .about-sub{
     padding: 0;
+    margin-bottom: 0;
+  }
+  .about-sub{
+    text-align: left;
+  }
+  .about-sub-title{
+    text-align: left;
   }
 }
+@media screen and (max-width: 480px){
+  .about-img{
+    display: none;
+  }
+  .about-sub{
+    text-align: left;
+    margin-left: -50px;;
+  }
 
+#about{
+  font-size: 120%;
+}
+.about-sub-title{
+  font-size: 100%;
+  text-align: left;
+}
+.about-p{
+  font-size:100%;
+}
+}
 
 /*skill*/
 #skill{
@@ -374,3 +420,48 @@ progress:hover::-webkit-progress-value{
 .pro_skill::-webkit-progress-value { background-color: orange; }
 .lan_skill::-webkit-progress-value { background-color: lightblue; }
 .oth_skill::-webkit-progress-value { background-color: #339900; }
+@media screen and (max-width: 400px){
+  .Pro_title{
+    font-size: 150%;
+  }
+  .prog_label{
+    font-size: 100%;
+    text-align: left;
+  }
+  progress {
+    height: 10px;
+    border-radius: 0;
+  }
+  .skill-main{
+    border: 0;
+    border-style:none;
+    padding: 0px;
+  }
+}
+
+
+
+
+@media screen and (max-width: 970px){
+.photo-main, .about-main, .main-experience, .skill-main{
+  border: 0;
+  border-style:none;
+}
+.main{
+  padding:0;
+}
+}
+@media screen and (max-width: 480px){
+.face{
+  padding: 10px;
+}
+.instagram{
+padding: 10px;
+}
+.twitter{
+padding: 10px;
+}
+.email{
+padding: 10px;
+}
+}
