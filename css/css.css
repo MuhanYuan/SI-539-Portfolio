@@ -81,9 +81,8 @@
   background-color: white;
   width: 100%;
   padding: 100px;
-  /*background:-moz-linear-gradient(top,#b8c4cb,#f6f6f8);
-  background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#b8c4cb), to(#f6f6f8));
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#0000ff)); */
+  background: -ms-linear-gradient(top, #fff, #696969);
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#696969));
   background: -webkit-linear-gradient(top, #fff, #696969);
 }
 .wel{

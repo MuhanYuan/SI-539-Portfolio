@@ -22,7 +22,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width" initial-scale="1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MY Home Page</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
@@ -66,7 +66,7 @@
     <div class="index-content">
         <div class="wel">
           <p class="welcome" id="wel1">
-            Hello</br> My name is Muhan Yuan.</br>I am from UMSI.</br>Welcome to MY page.
+            Hello<br/> My name is Muhan Yuan.<br/>I am from UMSI.<br/>Welcome to MY page.
           </p>
           <p class="welcome" id="wel-q">What is your name:</p>
           <form class="form-name" method="post">
@@ -85,16 +85,16 @@
         <div class="row">
           <div class="col-lg-6 social">
             <div class="face col-lg-3 col-md-3 col-xs-6">
-              <a href="https://www.facebook.com/profile.php?id=100011871866185"><img class="img-responsive" src="images/face.png"></a>
+              <a href="https://www.facebook.com/profile.php?id=100011871866185"><img class="img-responsive" src="images/face.png" alt="facebook logo"></a>
             </div>
-            <div href="" class="twitter col-lg-3 col-md-3 col-xs-6">
-              <a href=""><img class="img-responsive" src="images/twitter.png"></a>
+            <div class="twitter col-lg-3 col-md-3 col-xs-6">
+              <a href="redirect.html"><img class="img-responsive" src="images/twitter.png" alt="twitter logo"></a>
             </div>
-            <div href="" class="instagram col-lg-3 col-md-3 col-xs-6">
-              <a href="https://www.instagram.com/sasasamoyed/?hl=en"><img class="img-responsive" src="images/inst.png"></a>
+            <div class="instagram col-lg-3 col-md-3 col-xs-6">
+              <a href="https://www.instagram.com/sasasamoyed/?hl=en"><img class="img-responsive" src="images/inst.png" alt="instagram logo"></a>
             </div>
-            <div href="" class="email col-lg-3 col-md-3 col-xs-6">
-              <a href="mailto:yuanmh@umich.edu"><img class="img-responsive" src="images/email.png"></a>
+            <div class="email col-lg-3 col-md-3 col-xs-6">
+              <a href="mailto:yuanmh@umich.edu"><img class="img-responsive" src="images/email.png" alt="email logo"></a>
             </div>
           </div>
           <div class="col-lg-6 copyright">
@@ -110,7 +110,7 @@
     <script src="js/jquery.hiSlider.min.js"></script>
     <script>
       function welcome(){
-        document.getElementById("wel1").innerHTML = "Hello, "+ document.getElementById("name").value + "</br>It is so nice to meet you.</br> My name is Muhan Yuan.</br>I am from UMSI.</br>Welcome to MY page.";
+        document.getElementById("wel1").innerHTML = "Hello, "+ document.getElementById("name").value + "<br/>It is so nice to meet you.<br/> My name is Muhan Yuan.<br/>I am from UMSI.<br/>Welcome to MY page.";
         document.getElementById("wel-q").style.display="none";
         document.getElementById("name").style.display ="none";
       }
