@@ -70,7 +70,7 @@
           </p>
           <p class="welcome" id="wel-q">What is your name:</p>
           <form class="form-name" method="post">
-            <input type="text" size="20" id="name" name="who" onsubmit="welcome()">
+            <input type="text" size="20" id="name" name="who" onchange="welcome()">
             <input type="submit" value="Sign in" name="signin" class="button">
           </form>
         </div>
@@ -114,14 +114,6 @@
         document.getElementById("wel-q").style.display="none";
         document.getElementById("name").style.display ="none";
       }
-
-    	$('.SliderPok').hiSlider({
-    		isFlexible: true,
-    		isSupportTouch: true,
-    		titleAttr: function(curIdx){
-    			return $('img', this).attr('alt');
-    		}
-    	});
     </script>
 
 </body>

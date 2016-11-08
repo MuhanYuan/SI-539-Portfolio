@@ -31,10 +31,13 @@
     function mover(img){
         document.getElementById("hidden-frame").style.display="block";
         document.getElementById("hidden-frame").style.backgroundImage = "URL('"+img.src+"')";
+        img.style.opacity = "0.2";
 
     }
-    function mout(){
+    function mout(img){
       document.getElementById("hidden-frame").style.display="none";
+      img.style.opacity = "1";
+
     }
 
 
@@ -64,40 +67,40 @@
     <div class="row photo-main">
       <h1 class="pok-title">MY Pokemon Collection</h1>
       <div class="col-lg-2 col-md-3 col-sm-4 photo-unit">
-        <img class="img-responsive" src="images/pok1.png" alt="Flareon" onmouseover="mover(this);" onmouseout="mout();">
+        <img class="img-responsive" src="images/pok1.png" alt="Flareon" onmouseover="mover(this);" onmouseout="mout(this);">
       </div>
       <div class="col-lg-2 col-md-3 col-sm-4 photo-unit">
-        <img class="img-responsive" src="images/pok2.png" alt="Snorlax" onmouseover="mover(this);" onmouseout="mout();">
+        <img class="img-responsive" src="images/pok2.png" alt="Snorlax" onmouseover="mover(this);" onmouseout="mout(this);">
       </div>
       <div class="col-lg-2 col-md-3 col-sm-4 photo-unit">
-        <img class="img-responsive" src="images/pok3.png" alt="Omanyte" onmouseover="mover(this);" onmouseout="mout();">
+        <img class="img-responsive" src="images/pok3.png" alt="Omanyte" onmouseover="mover(this);" onmouseout="mout(this);">
       </div>
       <div class="col-lg-2 col-md-3 col-sm-4 photo-unit">
-        <img class="img-responsive" src="images/pok4.png" alt="Raichu" onmouseover="mover(this);" onmouseout="mout();">
+        <img class="img-responsive" src="images/pok4.png" alt="Raichu" onmouseover="mover(this);" onmouseout="mout(this);">
       </div>
       <div class="col-lg-2 col-md-3 col-sm-4 photo-unit">
-        <img class="img-responsive" src="images/pok5.png" alt="Slowbro" onmouseover="mover(this);" onmouseout="mout();">
+        <img class="img-responsive" src="images/pok5.png" alt="Slowbro" onmouseover="mover(this);" onmouseout="mout(this);">
       </div>
       <div class="col-lg-2 col-md-3 col-sm-4 photo-unit">
-        <img class="img-responsive" src="images/pok6.png" alt="Gengar" onmouseover="mover(this);" onmouseout="mout();">
+        <img class="img-responsive" src="images/pok6.png" alt="Gengar" onmouseover="mover(this);" onmouseout="mout(this);">
       </div>
       <div class="col-lg-2 col-md-3 col-sm-4 photo-unit">
-        <img class="img-responsive" src="images/pok7.png" alt="Porygon" onmouseover="mover(this);" onmouseout="mout();">
+        <img class="img-responsive" src="images/pok7.png" alt="Porygon" onmouseover="mover(this);" onmouseout="mout(this);">
       </div>
       <div class="col-lg-2 col-md-3 col-sm-4 photo-unit">
-        <img class="img-responsive" src="images/pok8.png" alt="Dratini" onmouseover="mover(this);" onmouseout="mout();">
+        <img class="img-responsive" src="images/pok8.png" alt="Dratini" onmouseover="mover(this);" onmouseout="mout(this);">
       </div>
       <div class="col-lg-2 col-md-3 col-sm-4 photo-unit">
-        <img class="img-responsive" src="images/pok9.jpeg" alt="Magneton" onmouseover="mover(this);" onmouseout="mout();">
+        <img class="img-responsive" src="images/pok9.jpeg" alt="Magneton" onmouseover="mover(this);" onmouseout="mout(this);">
       </div>
       <div class="col-lg-2 col-md-3 col-sm-4 photo-unit">
-        <img class="img-responsive" src="images/pok10.jpeg" alt="Vaporeon" onmouseover="mover(this);" onmouseout="mout();">
+        <img class="img-responsive" src="images/pok10.jpeg" alt="Vaporeon" onmouseover="mover(this);" onmouseout="mout(this);">
       </div>
       <div class="col-lg-2 col-md-3 col-sm-4 photo-unit">
-        <img class="img-responsive" src="images/pok11.jpeg" alt="Nidoqueen" onmouseover="mover(this);" onmouseout="mout();">
+        <img class="img-responsive" src="images/pok11.jpeg" alt="Nidoqueen" onmouseover="mover(this);" onmouseout="mout(this);">
       </div>
       <div class="col-lg-2 col-md-3 col-sm-4 photo-unit">
-        <img class="img-responsive" src="images/pok12.jpeg" alt="Jolteon" onmouseover="mover(this);" onmouseout="mout();">
+        <img class="img-responsive" src="images/pok12.jpeg" alt="Jolteon" onmouseover="mover(this);" onmouseout="mout(this);">
       </div>
 
     </div>
